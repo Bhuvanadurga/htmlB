@@ -166,7 +166,7 @@ color: aliceblue;
 .first_image_container,.second_image_container{
   height: 650px;
   width: 60%;
-  border: 2px solid; 
+ /* border: 2px solid; */
   display: flex;
   margin: 10px;
 
@@ -260,3 +260,4 @@ h3{
 
 
  */
+
