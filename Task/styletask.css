@@ -1,0 +1,35 @@
+.main_container{
+    width: 1000px;
+    height:535px;
+    border: 2px solid;
+  }
+.first_image_container,.second_image_container{
+  height: 250px;
+  width: 97%;
+  border: 2px solid;
+  display: flex;
+  margin: 10px;
+
+}
+
+.b{
+   height: 100%;
+   width: 100%; 
+   object-fit: fill;
+  /* border: 2px solid; */   
+   position: relative;
+   padding: 10px;
+}
+p{
+position: absolute;
+left: 35%;
+top: 40%;
+color: aliceblue;
+}
+ img{
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+  display: flex;
+  border-radius: 50%;
+ }
