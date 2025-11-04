@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Social Media App</title>
+  <link rel="stylesheet" href="socialmedia.css" />
+</head>
+
+<body class="theme-light">
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">
+      <span class="mark"></span>
+      <span class="text">SociaLite</span>
+    </div>
+
+    <div class="search">
+      <input id="searchInput" type="search" placeholder="Search people, posts or hashtags..." />
+    </div>
+
+    <div class="nav-actions">
+      <button class="btn" id="newPostBtn">New</button>
+      <button class="btn" id="themeToggle">🌙</button>
+      <div class="avatar">BD</div>
+    </div>
+  </header>
+
+  <!-- PAGE GRID -->
+  <div class="page">
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar">
+      <div class="profile-mini">
+        <div class="avatar">BD</div>
+        <div>
+          <div class="meta">Bhuvana Durga</div>
+          <div class="muted">MCA Student</div>
+        </div>
+      </div>
+
+      <nav class="nav-list">
+        <a href="#"><span>🏠</span> Home</a>
+        <a href="#"><span>🔔</span> Notifications</a>
+        <a href="#"><span>💬</span> Messages</a>
+        <a href="#"><span>🔎</span> Explore</a>
+        <a href="#"><span>⚙️</span> Settings</a>
+      </nav>
+    </aside>
+
+    <!-- MAIN FEED -->
+    <main class="feed">
+
+      <!-- Compose -->
+      <section class="compose">
+        <div class="avatar">BD</div>
+        <div style="flex:1">
+          <textarea id="composeText" placeholder="Share something..."></textarea>
+          <div class="compose-footer">
+            <div class="muted">Attach images (demo)</div>
+            <button class="btn" id="postBtn">Post</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Example Post 1 -->
+      <article class="post">
+        <div class="post-header">
+          <div class="post-left">
+            <div class="avatar">AR</div>
+            <div>
+              <div><b>Arjun Rao</b> <span class="muted">• 2h</span></div>
+              <div class="muted">Software Developer</div>
+            </div>
+          </div>
+          <div class="muted">•••</div>
+        </div>
+
+        <div class="post-body">
+          Building a minimal responsive social feed — test on mobile! ✨
+        </div>
+
+        <div class="post-media">
+          <img src="https://picsum.photos/800/350?random=1" alt="post-media" />
+        </div>
+
+        <div class="post-actions">
+          <span class="icon-btn" onclick="toggleLike(this)">👍 <span class="like-count">12</span></span>
+          <span class="icon-btn">💬 4</span>
+          <span class="icon-btn">🔁 1</span>
+        </div>
+      </article>
+
+      <div id="newPostsContainer"></div>
+    </main>
+
+    <!-- RIGHT SIDEBAR -->
+    <aside class="sidebar">
+      <div class="small-card">
+        <div class="card-header">
+          <b>Suggested for you</b>
+          <span class="muted">Refresh</span>
+        </div>
+        <div class="people-list">
+          <div class="person">
+            <div class="flex">
+              <div class="avatar">RK</div>
+              <div><b>Rohit</b><div class="muted">Photographer</div></div>
+            </div>
+            <button class="btn">Follow</button>
+          </div>
+          <div class="person">
+            <div class="flex">
+              <div class="avatar">SA</div>
+              <div><b>Sara</b><div class="muted">Developer</div></div>
+            </div>
+            <button class="btn">Follow</button>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+
+</body>
+</html>
