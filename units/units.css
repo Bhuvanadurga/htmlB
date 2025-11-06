@@ -1,0 +1,86 @@
+/* ====== General Page Styling ====== */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    margin: 40px;
+}
+
+/* ====== Container Styling ====== */
+.container {
+    max-width: 700px;
+    margin: auto;
+    background-color: #fafafa;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ====== Headings ====== */
+h2 {
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* ====== Each Stat Section ====== */
+.stat {
+    margin-bottom: 25px;
+}
+
+.stat p {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* ====== Progress Bar Background ====== */
+.progress-bar {
+    background-color: #bdbdbd;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 25px;
+    position: relative;
+}
+
+/* ====== Progress Fill Styling ====== */
+.progress {
+    height: 100%;
+    border-radius: 5px 0 0 5px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    line-height: 25px;
+    position: relative;
+}
+
+/* ====== Percentage Text Inside Bar ====== */
+.progress::after {
+    content: attr(data-percentage);
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    font-size: 14px;
+}
+
+/* ====== Different Colors for Each Bar ====== */
+.green {
+    background-color: #4CAF50;
+    width: 25%;
+}
+
+.orange {
+    background-color: #FFA500;
+    width: 50%;
+}
+
+.red {
+    background-color: #F44336;
+    width: 75%;
+}
+
+/* ====== Optional: Smooth Animation ====== */
+.progress {
+    transition: width 1s ease-in-out;
+}
