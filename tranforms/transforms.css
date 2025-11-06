@@ -1,0 +1,29 @@
+/* Container for all images */
+#RC {
+  display: flex;
+  overflow-x: auto;          /* Enables horizontal scroll */
+  white-space: nowrap;       /* Prevents images from wrapping to next line */
+  scroll-behavior: smooth;   /* Smooth scrolling */
+  padding: 10px;
+  gap: 10px;                 /* Space between images */
+}
+
+/* Each image container */
+#RC .item {
+  flex: 0 0 auto;            /* Prevent shrinking, keep original size */
+  margin: 3px;
+}
+
+/* Images styling */
+#RC .item img {
+  display: block;
+  width: 300px;              /* You can adjust image width */
+  height: auto;
+  border-radius: 8px;        /* Optional: rounded corners */
+  object-fit: cover;
+}
+
+/* Optional: hide scrollbar (looks clean) */
+#RC::-webkit-scrollbar {
+  display: none;
+}
